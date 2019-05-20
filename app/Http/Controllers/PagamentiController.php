@@ -33,7 +33,9 @@ class PagamentiController extends Controller
           WHERE id = $id
         ");
 
-        dd($pagante);
+        return view ("ver1.homePagantiById" ,
+              [ "pagante" => $pagante ]
+            );
 
     }
 }
